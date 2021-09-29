@@ -1,0 +1,13 @@
+footer{
+    background-color: rgb(215, 132, 157, 100%);
+}
+#footer-links p a{
+    text-decoration: none;
+    color: black;
+}
+#footer-links p a:hover{
+    color: white;
+    background-color: rgb(192, 22, 22);
+    padding: 4px;
+    border-radius: 5px;
+}

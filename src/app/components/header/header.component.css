@@ -1,5 +1,9 @@
-nav{
+.myNav{
     background-color: rgb(215, 132, 157, 100%);
+}
+
+.spacer{
+    flex: 1 1 auto;
 }
 
 .navTexts{

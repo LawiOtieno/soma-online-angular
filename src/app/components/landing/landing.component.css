@@ -1,0 +1,11 @@
+.landing{
+    background-image: url("https://images2.imgbox.com/43/f1/sTBZIZzo_o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.newToSoma{
+    background-color: rgb(218, 213, 213);
+}

@@ -4,9 +4,20 @@
     <button class="btn btn-large bg-primary rounded" (click)="getUser()">Get User</button>
   </div>
   <br><br>
-  <ul *ngFor="let user of data.users">
+  <!-- <ul *ngFor="let user of data.users">
     <li>{{ user.name }}</li>
     <li>{{ user.password }}</li>
     <li>{{ user.public_id }}</li>
-  </ul>
+  </ul> -->
+  <div class="row">
+    <div class="col-md-6" *ngFor="let user of data.users">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ user.name }}</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
 </div>

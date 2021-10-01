@@ -1,0 +1,8 @@
+<div class="container">
+  <button class="btn btn-large bg-info rounded" (click)="getUser()">Get User</button>
+  <ul *ngFor="let user of data.users">
+    <li>{{ user.name }}</li>
+    <li>{{ user.password }}</li>
+    <li>{{ user.public_id }}</li>
+  </ul>
+</div>

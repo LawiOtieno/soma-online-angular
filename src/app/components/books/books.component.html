@@ -1,0 +1,9 @@
+<div>
+  <button class="btn btn-large bg-info rounded" (click)="getBook()">Get Books</button>
+  <ul *ngFor="let book of books.books">
+    <li>{{ book.book_author }}</li>
+    <li>{{ book.book_title }}</li>
+    <li>{{ book.book_url }}</li>
+    <li>{{ book.publisher }}</li>
+  </ul>
+</div>

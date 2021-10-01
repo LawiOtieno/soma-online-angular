@@ -1,9 +1,31 @@
-<div>
-  <button class="btn btn-large bg-info rounded" (click)="getBook()">Get Books</button>
-  <ul *ngFor="let book of books.books">
-    <li>{{ book.book_author }}</li>
-    <li>{{ book.book_title }}</li>
-    <li>{{ book.book_url }}</li>
-    <li>{{ book.publisher }}</li>
-  </ul>
+<div class="container">
+  <br><br>
+  <div class="text-center">
+    <button class="btn btn-large bg-primary rounded" (click)="getBook()">Get Books</button>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let book of books.books">
+      <div class="card" style="width: 40rem;">
+        <!-- Display Books -->
+        <div>
+          <img src="{{ book.book_url }}" class="card-img-top" alt="...">
+        </div>
+        
+        <div class="card-body">
+          <h5 class="card-title">{{ book.book_title }}</h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Author: </strong>{{ book.book_author }}</li>
+          <li class="list-group-item"><strong>Publisher: </strong>{{ book.publisher }}</li>
+          <li class="list-group-item text-center"><a class="text-decoration-none" href="{{ book.book_url }}" target="_black"><button class="btn btn-large bg-info rounded">Read More</button></a></li>
+        </ul>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <br><br>
 </div>
+
+
